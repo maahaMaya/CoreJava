@@ -6,7 +6,7 @@ public class LinearSearch {
 		int index = 0;
 		for(int ar : arr) {
 			if(ar == checkingValue) {
-				System.out.print("Value found in Array " + checkingValue + " & index is at " + index);
+				System.out.println("Value found in Array " + checkingValue + " & index is at " + index);
 				return;
 			}
 			index++;
@@ -18,5 +18,6 @@ public class LinearSearch {
 		int[] intArr = {3, 6, 5, 9, 3, 2,99};
 		LinearSearch linearSearch = new LinearSearch();
 		linearSearch.linarSearchAlgo(intArr, 9);
+		linearSearch.linarSearchAlgo(intArr, 19);
 	}
 }
