@@ -1,5 +1,8 @@
 package ProducerConsumerProblem;
 
+//Question: Two threads, a producer and a consumer, share a common, fixed-size buffer as a queue. 
+//The producer's job is to generate data and put it into the buffer, while the consumer's job is to consume the data from the buffer. 
+//The problem is to make sure that the producer won't produce data if the buffer is full, and the consumer won't consume data if the buffer is empty.
 public class ProducerConsumerLearning {
 	
 	public static void main(String[] args) {

@@ -14,7 +14,7 @@ public class QueueUsingArray {
 		}
 		
 		//check empty
-		public static boolean isEmplty() {
+		public static boolean isEmpty() {
 			return rear == -1;
 		}
 		
@@ -30,7 +30,7 @@ public class QueueUsingArray {
 		
 		//remove from queue
 		public static int remove() {
-			if(isEmplty()) {
+			if(isEmpty()) {
 				System.out.println("Queue is empty!");
 				return -1;
 			}
@@ -45,7 +45,7 @@ public class QueueUsingArray {
 		
 		//peek
 		public static int peek() {
-			if(isEmplty()) {
+			if(isEmpty()) {
 				System.out.println("Queue is empty!");
 				return -1;
 			}
@@ -60,7 +60,7 @@ public class QueueUsingArray {
 		queue.add(2);
 		queue.add(3);
 		
-		while (!queue.isEmplty()) {
+		while (!queue.isEmpty()) {
 			System.out.print(" <- " + queue.peek());
 			queue.remove();
 		}
