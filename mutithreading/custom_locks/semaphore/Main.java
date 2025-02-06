@@ -19,7 +19,7 @@ public class Main {
 		Thread th4 = new Thread(() -> {
 			sharedResource.producer();
 		});
-
+		
 		th1.start();
 		th2.start();
 		th3.start();
