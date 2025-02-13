@@ -6,19 +6,19 @@ public class FindMaxSubArraysSumUsingPrefixSum {
 		int currentSum = 0;
 		int maxSum = Integer.MIN_VALUE;
 		int prefixSum[] = new int[arr.length];
-		
+
 		prefixSum[0] = arr[0];
-		
-		//calculate prefix array
-		for(int i = 1; i < prefixSum.length; i++) {
+
+		// calculate prefix array
+		for (int i = 1; i < prefixSum.length; i++) {
 			prefixSum[i] = prefixSum[i - 1] + arr[i];
 		}
-		
+
 		for (int i = 0; i < arr.length; i++) {
 			System.out.print("[ ");
 			for (int j = i; j < arr.length; j++) {
 				System.out.print("( ");
-				
+
 				currentSum = i == 0 ? prefixSum[j] : prefixSum[j] - prefixSum[i - 1];
 				if (currentSum > maxSum) {
 					maxSum = currentSum;
