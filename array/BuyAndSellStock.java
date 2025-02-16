@@ -16,6 +16,7 @@ public class BuyAndSellStock {
 		
 		return maxProfit;
 	}
+	
 	public static void main(String[] args) {
 		int prices[] = {5, 1, 0, 3, 0, 4};
 		System.out.println(makeProfit(prices));
