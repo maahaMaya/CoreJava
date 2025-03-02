@@ -7,6 +7,7 @@ public class ChessBoardAllPossibleRuleCombination {
                 return false;
             }
         }
+        
         // diagonal left up
         for(int i = row - 1, j = col - 1; i >= 0 && j >= 0; i-- , j--) {
             if(board[i][j] =='Q') {
