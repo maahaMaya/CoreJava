@@ -36,7 +36,6 @@ public class FractionalKnapsack {
 				break;
 			}
 		}
-		
-		System.out.print("finalSellValue : " + finalSellValue);
+			System.out.print("finalSellValue : " + finalSellValue);
 		}
 }
